@@ -5,6 +5,7 @@ var makeDancer = function(top, left, timeBetweenSteps) {
 
   // use jQuery to create an HTML <span> tag
   this.$node = $('<span class="dancer"></span>');
+  this.timeBetweenSteps = timeBetweenSteps;
 
   console.log('logging this');
   console.log(this);
@@ -14,7 +15,7 @@ var makeDancer = function(top, left, timeBetweenSteps) {
   //I can run the following in the console var dancer = new makeDancer()
 
 
-  this.step.call(); // <-- need to add a .call here?  what is the thisArg?
+  this.step(); // <-- need to add a .call here?  what is the thisArg?
 
 
 
@@ -30,7 +31,9 @@ var makeDancer = function(top, left, timeBetweenSteps) {
 makeDancer.prototype.step = function() {
   // the basic dancer doesn't do anything interesting at all on each step,
   // it just schedules the next step
-  setTimeout(this.step, timeBetweenSteps); //not sure about set timeout
+  var currentThis = this;
+  
+  setTimeout(function () { currentThis.step(); }, this.timeBetweenSteps); //not sure about set timeout
 };
 
 makeDancer.prototype.setPosition = function(top, left) {
