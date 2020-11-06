@@ -23,12 +23,21 @@ slideDancer.prototype.step = function() {
   console.log('in the make blinky dancer step function');
   console.log(this);
   console.log(this.$node);
+
+
   //this.$node.slideDown("slow", "swing");
-  this.$node.animate({
-    opacity: 0.5,
-    left: "+=50",
-    height: "toggle"
-  }, 5000, function() {
-    // Animation complete.
-  });
+  //this.$node.toggle();
+  this.$node.animate({height: '+=20px', width: '+=20px'}, 500);
+  //makeDancer.prototype.step.call(this);
+  this.$node.animate({height: '-=20px', width: '-=20px'}, 500);
+
+  // this.$node.animate({
+  //   opacity: 0.5,
+  //   left: "+=50",
+  //   height: "toggle"
+  // }, 5000, function() {
+  //   // Animation complete.
+  // });
+
+
 };

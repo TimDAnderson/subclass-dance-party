@@ -20,8 +20,29 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.dancer{
-  border:10px solid red;
-  border-radius:10px;
+.blinky{
+  /* border:10px solid red;
+  border-radius:10px; */
+  
+
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 40px solid red;
+  border-bottom: 20px solid transparent;
   position:absolute;
+}
+.fade{
+  /*border:10px solid rgb(79, 138, 13);*/
+  /*border-radius:10px;*/
+  width: 20px;
+  height: 20px;
+  position:absolute;
+  background: blueviolet;
+}
+.slide{
+  border:10px solid blue;
+  border-radius:30px;
+  position:absolute;
+  background: blue
 }
