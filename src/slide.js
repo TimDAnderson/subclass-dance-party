@@ -20,16 +20,16 @@ slideDancer.prototype.step = function() {
   // toggle() is a jQuery method to show/hide the <span> tag.
   // See http://api.jquery.com/category/effects/ for this and
   // other effects you can use on a jQuery-wrapped html tag.
-  console.log('in the make blinky dancer step function');
-  console.log(this);
-  console.log(this.$node);
+  // console.log('in the make blinky dancer step function');
+  // console.log(this);
+  // console.log(this.$node);
 
 
   //this.$node.slideDown("slow", "swing");
   //this.$node.toggle();
-  this.$node.animate({height: '+=20px', width: '+=20px'}, 500);
+  this.$node.animate({height: '+=100px', width: '+=100px'}, 500);
   //makeDancer.prototype.step.call(this);
-  this.$node.animate({height: '-=20px', width: '-=20px'}, 500);
+  this.$node.animate({height: '-=100px', width: '-=100px'}, 500);
 
   // this.$node.animate({
   //   opacity: 0.5,
