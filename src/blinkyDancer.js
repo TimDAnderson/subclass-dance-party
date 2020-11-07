@@ -23,6 +23,7 @@ makeBlinkyDancer.prototype.step = function() {
   // console.log('in the make blinky dancer step function');
   // console.log(this);
   // console.log(this.$node);
+  this.$node.attr('src', 'https://dogbreedcartoon.com/wp-content/uploads/2016/12/Goldendoodle-Special.png');
   this.$node.toggle();
 
 };

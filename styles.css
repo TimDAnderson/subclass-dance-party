@@ -30,11 +30,11 @@ body, a:link, a:visited, a:active{
   border-radius:10px; */
   
 
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
+  width: 150;
+  height: 150;
+  /* border-top: 20px solid transparent;
   border-right: 40px solid red;
-  border-bottom: 20px solid transparent;
+  border-bottom: 20px solid transparent; */
   position:absolute;
 }
 
@@ -43,10 +43,10 @@ body, a:link, a:visited, a:active{
 .fade {
   margin-top: 500px;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  background-color: cornflowerblue;
-  border: 2px solid #999;
+  width: 150px;
+  height: 150px;
+  /* background-color: cornflowerblue;
+  border: 2px solid #999; */
   animation: bounce 1s infinite alternate;
   -webkit-animation: bounce .5s infinite alternate;
 }
@@ -66,21 +66,14 @@ body, a:link, a:visited, a:active{
     transform: translateY(-150px);
   }
 }
-.fade{
-  /*border:10px solid rgb(79, 138, 13);*/
-  /*border-radius:10px;*/
-  width: 20px;
-  height: 20px;
-  position:absolute;
-  background: blueviolet;
-}
+
 
 
 .slide{
-  border:10px solid blue;
+  /* border:10px solid blue; */
   border-radius:30px;
   position:absolute;
-  background: blue
+  /* background: blue */
 }
 
 
@@ -88,7 +81,7 @@ body, a:link, a:visited, a:active{
 
 /* new stuff */
 
-.image {
+/* .image {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -101,7 +94,7 @@ body, a:link, a:visited, a:active{
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } } */
 
 
 
@@ -109,7 +102,7 @@ body, a:link, a:visited, a:active{
 
 
 
-.ball {
+/* .ball {
   margin-top: 500px;
   border-radius: 50%;
   width: 50px;
@@ -162,7 +155,7 @@ body, a:link, a:visited, a:active{
   to {
     transform: translateX(50px);
   }
-}
+} */
 
 
 
