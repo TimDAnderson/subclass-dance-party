@@ -23,8 +23,8 @@ fadeDancer.prototype.step = function() {
   // console.log('in the make blinky dancer step function');
   // console.log(this);
   // console.log(this.$node);
-  this.$node.attr("src", "https://static8.depositphotos.com/1000792/1065/v/450/depositphotos_10659058-stock-illustration-cute-dog.jpg");
-  this.$node.fadeToggle("slow", "linear");
+  this.$node.attr("src", "https://img.favpng.com/2/11/15/golden-retriever-background-png-favpng-YGrdew7FDKgDTyBuEgGxTyGVp.jpg");
+  //this.$node.fadeToggle("slow", "linear");
   // makeDancer.prototype.step.call(this);
   // this.$node.fadeIn();
 };

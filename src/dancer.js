@@ -5,7 +5,7 @@ var makeDancer = function(top, left, timeBetweenSteps) {
 
   // use jQuery to create an HTML <span> tag
   //this.$node = $('<span class="dancer" ></span>');
-  this.$node = $('<img class="image" src="https://www.jing.fm/clipimg/full/90-900384_goldendoodle-01-yappicon-golden-doodle-cartoon-head.png" alt="" width="120" height="120"></img>');
+  this.$node = $('<img class="dancer" src="https://www.jing.fm/clipimg/full/90-900384_goldendoodle-01-yappicon-golden-doodle-cartoon-head.png" alt="" width="120" height="120"></img>');
   this.timeBetweenSteps = timeBetweenSteps;
 
   console.log('logging this');

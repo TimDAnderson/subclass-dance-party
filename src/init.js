@@ -22,14 +22,24 @@ $(document).ready(function() {
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
     // make a dancer with a random position
-    var screenHeight = $("body").height() * Math.random();
+    console.log($('body').height());
+    //height is 1041, figure out random between 400 and 1041 instead
+    var screenHeight = (641 * Math.random()) + 400;
+    console.log('this is the height in window');
     console.log(screenHeight);
+
+
+
+    var screenWidth = $('body').width() * Math.random();
+    console.log('this is the width in window');
+    console.log(screenWidth);
+
     //the lower the height, the higher up the screen it is
 
 
     var dancer = new dancerMakerFunction(
       screenHeight,
-      $("body").width() * Math.random(),
+      screenWidth,
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
@@ -45,13 +55,25 @@ $(document).ready(function() {
     for (var i = 0; i < window.dancers.length; i++) {
       console.log(window.dancers[i]);
       window.dancers[i].removeClass();
-      window.dancers[i].appendTo(".bottom");
-      window.dancers[i].addClass("movedNode");
+      window.dancers[i].appendTo('.bottom');
+      window.dancers[i].addClass('movedNode');
       //window.danvers[i].focus(function(){ $(this).css("all","unset"); });
     }
 
 
   });
+
+
+  $('.dancer').on('click', function(event) {
+    console.log('clicked on a dancer!!!!!!!');
+  });
+
+  //click on a dancer
+  //log its coordinates in window
+
+  //iterate through other dancers
+  //identify the closest dancer
+  //make the closest dancer do something
 
 
 

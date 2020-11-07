@@ -41,8 +41,8 @@ body, a:link, a:visited, a:active{
 
 
 .fade {
-  margin-top: 500px;
-  border-radius: 50%;
+  margin-top: 650px;
+  /* border-radius: 50%; */
   width: 150px;
   height: 150px;
   /* background-color: cornflowerblue;
@@ -166,3 +166,18 @@ body, a:link, a:visited, a:active{
   position: absolute; 
   bottom: 0;
 }
+
+
+img:hover {
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+} 
+
