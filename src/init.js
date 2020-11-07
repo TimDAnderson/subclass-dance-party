@@ -14,7 +14,7 @@ $(document).ready(function() {
     /* dancerMakerFunctionName is a string which must match
      * one of the dancer maker functions available in global scope.
      * A new object of the given type will be created and added
-     * to the stage.
+     * to the stage .
      */
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
 
